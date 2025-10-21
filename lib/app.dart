@@ -3,6 +3,8 @@ import 'button.dart';
 import 'home.dart';
 import 'package:flutter/material.dart';
 
+import 'module-8/input.dart';
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -11,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      home: Button(),
+      home: FlutterInput(),
     );
   }
 }
