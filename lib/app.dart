@@ -10,6 +10,8 @@ import 'home.dart';
 import 'package:flutter/material.dart';
 
 import 'module-8/input.dart';
+import 'module-9/Flist.dart';
+import 'module-9/stack.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -109,6 +111,14 @@ class MyApp extends StatelessWidget {
       ),
       themeMode: ThemeMode.light,
       home: ThemeTest(),
+      initialRoute: 'stack',
+      routes: {
+        'home': (context) => Home(),
+        'button': (context) => Button(),
+        'theme': (context) => ThemeTest(),
+        'flist': (context) => Flist(),
+        'stack': (context) => MyStack(),
+      },
     );
   }
 }
