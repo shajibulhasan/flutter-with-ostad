@@ -2,6 +2,7 @@ import 'package:batch_13/module-8/container.dart';
 import 'package:batch_13/module-8/grid_view.dart';
 import 'package:batch_13/module-9/theme.dart';
 
+import 'module-11/responsive.dart';
 import 'module-8/form.dart';
 
 import 'button.dart';
@@ -111,13 +112,14 @@ class MyApp extends StatelessWidget {
       ),
       themeMode: ThemeMode.light,
       home: ThemeTest(),
-      initialRoute: 'stack',
+      initialRoute: 'res',
       routes: {
         'home': (context) => Home(),
         'button': (context) => Button(),
         'theme': (context) => ThemeTest(),
         'flist': (context) => Flist(),
         'stack': (context) => MyStack(),
+        'res': (context) => Res(),
       },
     );
   }
