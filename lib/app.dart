@@ -5,6 +5,7 @@ import 'package:batch_13/module-9/theme.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'module-11/responsive.dart';
 import 'module-11/responsive_package.dart';
+import 'module-12/state_class.dart';
 import 'module-8/form.dart';
 
 import 'button.dart';
@@ -120,7 +121,7 @@ class MyApp extends StatelessWidget {
             ),
             themeMode: ThemeMode.light,
             home: ThemeTest(),
-            initialRoute: 'todo',
+            initialRoute: 'state',
             routes: {
               'home': (context) => Home(),
               'button': (context) => Button(),
@@ -130,6 +131,7 @@ class MyApp extends StatelessWidget {
               'res': (context) => Res(),
               'resPak': (context) => ResponsivePackage(),
               'todo': (context) => TodoApp(),
+              'state': (context) => StateClass(),
             },
           );
         },
