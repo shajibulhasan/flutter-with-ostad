@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 class ElevatedButtonWidget extends StatelessWidget {
-  String text;
-  Color? color;
+  final String text;
+  final Color? color;
   final VoidCallback onClick;
-  ElevatedButtonWidget({
+  const ElevatedButtonWidget({
     super.key,
     required this.text,
     required this.onClick,
