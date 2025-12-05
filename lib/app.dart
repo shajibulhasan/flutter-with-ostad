@@ -5,6 +5,7 @@ import 'package:batch_13/module-9/theme.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'module-11/responsive.dart';
 import 'module-11/responsive_package.dart';
+import 'module-12/calculator.dart';
 import 'module-12/state_class.dart';
 import 'module-8/form.dart';
 
@@ -91,7 +92,7 @@ class MyApp extends StatelessWidget {
               ),
               elevatedButtonTheme: ElevatedButtonThemeData(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue,
+                  backgroundColor: Colors.grey[800],
                   foregroundColor: Colors.white,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30),
@@ -119,9 +120,9 @@ class MyApp extends StatelessWidget {
                 ),
               ),
             ),
-            themeMode: ThemeMode.light,
+            themeMode: ThemeMode.dark,
             home: ThemeTest(),
-            initialRoute: 'state',
+            initialRoute: 'calculator',
             routes: {
               'home': (context) => Home(),
               'button': (context) => Button(),
@@ -132,6 +133,7 @@ class MyApp extends StatelessWidget {
               'resPak': (context) => ResponsivePackage(),
               'todo': (context) => TodoApp(),
               'state': (context) => StateClass(),
+              'calculator': (context) => Calculator(),
             },
           );
         },
