@@ -99,7 +99,7 @@ class _CalculatorState extends State<Calculator> {
                 ElevatedButtonWidget(onClick: ()=>onButtonPressed('7'),text: '7'),
                 ElevatedButtonWidget(onClick: ()=>onButtonPressed('8'),text: '8'),
                 ElevatedButtonWidget(onClick: ()=>onButtonPressed('9'),text: '9'),
-                ElevatedButtonWidget(onClick: ()=>onButtonPressed('C'),text: 'C', color: Colors.blue),
+                ElevatedButtonWidget(onClick: ()=>onButtonPressed('/'),text: '/', color: Colors.blue),
               ],
             ),
             Row(
@@ -120,9 +120,10 @@ class _CalculatorState extends State<Calculator> {
             ),
             Row(
               children: [
-                ElevatedButtonWidget(onClick: ()=>onButtonPressed('Del'), text: 'Del', color: Colors.red),
+                ElevatedButtonWidget(onClick: ()=>onButtonPressed('Del'), text: 'D', color: Colors.red),
                 ElevatedButtonWidget(onClick: ()=>onButtonPressed('0'),text: '0'),
                 ElevatedButtonWidget(onClick: ()=>onButtonPressed('='),text: '='),
+                ElevatedButtonWidget(onClick: ()=>onButtonPressed('C'),text: 'C', color: Colors.green),
                 ElevatedButtonWidget(onClick: ()=>onButtonPressed('*'),text: '*', color: Colors.blue),
               ],
             ),

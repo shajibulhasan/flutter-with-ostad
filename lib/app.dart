@@ -1,4 +1,5 @@
 import 'package:batch_13/module-11/todo_app.dart';
+import 'package:batch_13/module-13/api.dart';
 import 'package:batch_13/module-9/theme.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'module-11/responsive.dart';
@@ -116,9 +117,9 @@ class MyApp extends StatelessWidget {
                 ),
               ),
             ),
-            themeMode: ThemeMode.dark,
+            themeMode: ThemeMode.light,
             home: ThemeTest(),
-            initialRoute: 'calculator',
+            initialRoute: 'api',
             routes: {
               'home': (context) => Home(),
               'button': (context) => Button(),
@@ -130,6 +131,7 @@ class MyApp extends StatelessWidget {
               'todo': (context) => TodoApp(),
               'state': (context) => StateClass(),
               'calculator': (context) => Calculator(),
+              'api': (context) => ApiCall(),
             },
           );
         },
